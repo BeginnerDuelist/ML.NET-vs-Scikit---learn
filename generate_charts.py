@@ -21,6 +21,7 @@ from matplotlib.ticker import ScalarFormatter
 ROOT = Path(__file__).parent
 SKLEARN_JSON = ROOT / "results_sklearn.json"
 MLNET_JSON = ROOT / "results_mlnet.json"
+CHARTS_DIR = ROOT / "charts"
 
 SKLEARN_COLOR = "#1565C0"
 MLNET_COLOR = "#B71C1C"
@@ -126,7 +127,7 @@ def plot_train_times(sklearn_results: dict, mlnet_results: dict) -> None:
     ax.set_ylabel("Timp de antrenament (ms)")
     ax.set_title("Timp de antrenament: scikit-learn vs ML.NET (scară log)")
     fig.tight_layout()
-    fig.savefig(ROOT / "fig1_train.png", dpi=DPI, bbox_inches="tight")
+    fig.savefig(CHARTS_DIR / "fig1_train.png", dpi=DPI, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -139,7 +140,7 @@ def plot_infer_times(sklearn_results: dict, mlnet_results: dict) -> None:
     ax.set_ylabel("Timp de inferență (ms)")
     ax.set_title("Timp de inferență: scikit-learn vs ML.NET")
     fig.tight_layout()
-    fig.savefig(ROOT / "fig2_infer.png", dpi=DPI, bbox_inches="tight")
+    fig.savefig(CHARTS_DIR / "fig2_infer.png", dpi=DPI, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -170,7 +171,7 @@ def _plot_classifier_metric(
     ax.set_ylabel(y_label)
     ax.set_title(title)
     fig.tight_layout()
-    fig.savefig(ROOT / output_filename, dpi=DPI, bbox_inches="tight")
+    fig.savefig(CHARTS_DIR / output_filename, dpi=DPI, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -237,12 +238,13 @@ def plot_regression(sklearn_results: dict, mlnet_results: dict) -> None:
 
     fig.suptitle("Regresie liniară: comparație scikit-learn vs ML.NET")
     fig.tight_layout()
-    fig.savefig(ROOT / "fig5_regression.png", dpi=DPI, bbox_inches="tight")
+    fig.savefig(CHARTS_DIR / "fig5_regression.png", dpi=DPI, bbox_inches="tight")
     plt.close(fig)
 
 
 def main() -> None:
     _apply_rc_params()
+    CHARTS_DIR.mkdir(parents=True, exist_ok=True)
     sklearn_results, mlnet_results = _load_results()
 
     plot_train_times(sklearn_results, mlnet_results)
@@ -259,7 +261,7 @@ def main() -> None:
         "fig4_f1.png",
         "fig5_regression.png",
     ]:
-        print(f"  - {ROOT / fig_name}")
+        print(f"  - {CHARTS_DIR / fig_name}")
 
 
 if __name__ == "__main__":

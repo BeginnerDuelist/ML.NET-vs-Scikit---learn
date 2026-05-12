@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VQRF1w3wRbE=",
+  "dgSpecHash": "+MkAMqly8mw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\Articol\\MLNetBenchmark\\MLNetBenchmark.csproj",
+  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\Articol - Copie\\MLNetBenchmark\\MLNetBenchmark.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.ml\\3.0.1\\microsoft.ml.3.0.1.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.ml.cpumath\\3.0.1\\microsoft.ml.cpumath.3.0.1.nupkg.sha512",

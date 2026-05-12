@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MLNetBenchmark")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da114d00a97211b4f5085fbcc5beaac4d3e67586")]
 [assembly: System.Reflection.AssemblyProductAttribute("MLNetBenchmark")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MLNetBenchmark")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

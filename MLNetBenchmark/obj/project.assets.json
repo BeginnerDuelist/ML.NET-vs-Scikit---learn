@@ -1252,11 +1252,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Articol\\MLNetBenchmark\\MLNetBenchmark.csproj",
+      "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Articol - Copie\\MLNetBenchmark\\MLNetBenchmark.csproj",
       "projectName": "MLNetBenchmark",
-      "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Articol\\MLNetBenchmark\\MLNetBenchmark.csproj",
+      "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Articol - Copie\\MLNetBenchmark\\MLNetBenchmark.csproj",
       "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Articol\\MLNetBenchmark\\obj\\",
+      "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Articol - Copie\\MLNetBenchmark\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
